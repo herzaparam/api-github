@@ -1,0 +1,31 @@
+.containerCard {
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1em;
+}
+.containerCard > h3, .sect-top > h5, .sect-top > p {
+    margin: 0;
+}
+.containerCard > a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.containerCard > a:hover {
+color: blue;
+}
+.sect-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.sect-top > h5 {
+    flex-basis: 150px;
+    color: grey;
+}
+.sect-top > p {
+    color: grey;
+}
+

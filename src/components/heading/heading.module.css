@@ -11,3 +11,7 @@
 .container > input {
     margin-left: 5px;
 }
+.text-error {
+    color: red;
+    text-align: center;
+}

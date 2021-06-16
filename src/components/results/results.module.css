@@ -1,0 +1,9 @@
+.mainSect {
+    padding: 0 2em;
+}
+.secSect {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+}
