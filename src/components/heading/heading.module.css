@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: grey;
+    padding: 1em 0;
+}
+.container > h5 {
+    color: white;
+}
