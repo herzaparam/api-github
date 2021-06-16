@@ -4,8 +4,8 @@ import styles from './heading.module.css'
 function Heading() {
     return (
         <div className={styles.container}>
-            <input type="text" />
-            <h5>Search here</h5>
+            <h5>Search :</h5>
+            <input type="text" placeholder="type here" />
         </div>
     )
 }
