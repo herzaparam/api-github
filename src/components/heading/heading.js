@@ -9,14 +9,15 @@ function Heading() {
     const [repos, setRepos] = useState([])
     const [err, setErr] = useState(false)
 
+
     const handleClick = async () => {
         try {
             const result = await axios(`https://api.github.com/users/${name}/repos`)
             setRepos(result.data)
+            setErr(false)
         } catch (err) {
-            if(err.response.status === 404 ){
-                setErr(true)
-            }
+            console.log(err);
+            setErr(true)
         }
     }
 
@@ -28,8 +29,9 @@ function Heading() {
                 <button onClick={handleClick}>Search</button>
             </div>
             <div className={styles.mainContainer}>
-                <Results repos={repos} />
-                {err === true && <h2 className={styles["text-error"]}>User Not Found</h2>}
+                {err === true ? <h2 className={styles["text-error"]}>User Not Found</h2> :
+                    <Results repos={repos} />
+                }
             </div>
         </>
     )
